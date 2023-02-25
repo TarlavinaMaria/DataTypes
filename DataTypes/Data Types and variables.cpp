@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -14,51 +14,51 @@ void main()
 	setlocale(LC_ALL, "Russian");
 
 #if defined Task1
-	cout << "Преобразование числа в денежный формат\n"; // rub. - целая часть, cop. - дробная часть.
+	cout << "РџСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ С‡РёСЃР»Р° РІ РґРµРЅРµР¶РЅС‹Р№ С„РѕСЂРјР°С‚\n"; // rub. - С†РµР»Р°СЏ С‡Р°СЃС‚СЊ, cop. - РґСЂРѕР±РЅР°СЏ С‡Р°СЃС‚СЊ.
 	double number;
-	cout << "Введите дробное число "; cin >> number;
+	cout << "Р’РІРµРґРёС‚Рµ РґСЂРѕР±РЅРѕРµ С‡РёСЃР»Рѕ "; cin >> number;
 	int rub = trunc(number);
 	double cop = (number - rub) * 100;
-	cout << number << " грн. - это " << rub << " грн. " << cop << " коп.";
+	cout << number << " РіСЂРЅ. - СЌС‚Рѕ " << rub << " РіСЂРЅ. " << cop << " РєРѕРї.";
 #endif
 
 #if defined Task2
-	cout << "Вычисление стоимости покупки\n";
-	cout << "Введите исходные данные:\n";
-	double notebook_price; //Цена тетради
-	int notebook; //Кол-во тетрадей
-	double pencil_price; //Цена карандаша
-	int pencil; //Кол-во карандашей
-	cout << "Цена тетради (грн.) "; cin >> notebook_price;
-	cout << "Количество тетрадей "; cin >> notebook;
-	cout << "Цена карандаша (грн.) "; cin >> pencil_price;
-	cout << "Количество карандашей "; cin >> pencil;
+	cout << "Р’С‹С‡РёСЃР»РµРЅРёРµ СЃС‚РѕРёРјРѕСЃС‚Рё РїРѕРєСѓРїРєРё\n";
+	cout << "Р’РІРµРґРёС‚Рµ РёСЃС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ:\n";
+	double notebook_price; //Р¦РµРЅР° С‚РµС‚СЂР°РґРё
+	int notebook; //РљРѕР»-РІРѕ С‚РµС‚СЂР°РґРµР№
+	double pencil_price; //Р¦РµРЅР° РєР°СЂР°РЅРґР°С€Р°
+	int pencil; //РљРѕР»-РІРѕ РєР°СЂР°РЅРґР°С€РµР№
+	cout << "Р¦РµРЅР° С‚РµС‚СЂР°РґРё (РіСЂРЅ.) "; cin >> notebook_price;
+	cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ С‚РµС‚СЂР°РґРµР№ "; cin >> notebook;
+	cout << "Р¦РµРЅР° РєР°СЂР°РЅРґР°С€Р° (РіСЂРЅ.) "; cin >> pencil_price;
+	cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ РєР°СЂР°РЅРґР°С€РµР№ "; cin >> pencil;
 	double sum = (notebook_price * notebook) + (pencil_price * pencil);
-	cout << "Стоимость покупки: " << sum << " грн.";
+	cout << "РЎС‚РѕРёРјРѕСЃС‚СЊ РїРѕРєСѓРїРєРё: " << sum << " РіСЂРЅ.";
 #endif
 
 #if defined Task3
-	cout << "Вычисление стоимости покупки\n";
-	cout << "Введите исходные данные:\n";
-	double notebook_price; //Цена тетради
-	int notebook; //Кол-во комплектов
-	double cover; // Цена обложки
-	cout << "Цена тетради (грн.) "; cin >> notebook_price;
-	cout << "Цена обложки (грн.) "; cin >> cover;
-	cout << "Количество комплектов "; cin >> notebook;
+	cout << "Р’С‹С‡РёСЃР»РµРЅРёРµ СЃС‚РѕРёРјРѕСЃС‚Рё РїРѕРєСѓРїРєРё\n";
+	cout << "Р’РІРµРґРёС‚Рµ РёСЃС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ:\n";
+	double notebook_price; //Р¦РµРЅР° С‚РµС‚СЂР°РґРё
+	int notebook; //РљРѕР»-РІРѕ РєРѕРјРїР»РµРєС‚РѕРІ
+	double cover; // Р¦РµРЅР° РѕР±Р»РѕР¶РєРё
+	cout << "Р¦РµРЅР° С‚РµС‚СЂР°РґРё (РіСЂРЅ.) "; cin >> notebook_price;
+	cout << "Р¦РµРЅР° РѕР±Р»РѕР¶РєРё (РіСЂРЅ.) "; cin >> cover;
+	cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРјРїР»РµРєС‚РѕРІ "; cin >> notebook;
 	double sum = (notebook_price * notebook) + (cover * notebook);
-	cout << "Стоимость покупки: " << sum << " грн.";
+	cout << "РЎС‚РѕРёРјРѕСЃС‚СЊ РїРѕРєСѓРїРєРё: " << sum << " РіСЂРЅ.";
 #endif
 
 #if defined Task4
-	cout << "Вычисление стоимости поездки на дачу и обратно.\n";
-	int kilometers; // растояние
-	cout << "Растояние до дачи (км.) "; cin >> kilometers;
-	double petrol_quantity; // расход
-	cout << "Расход бензина (литров на 100 км. пробега) "; cin >> petrol_quantity;
-	double gasoline_price; // цена бензина
-	cout << "Цена литра бензина (грн.) "; cin >> gasoline_price;
+	cout << "Р’С‹С‡РёСЃР»РµРЅРёРµ СЃС‚РѕРёРјРѕСЃС‚Рё РїРѕРµР·РґРєРё РЅР° РґР°С‡Сѓ Рё РѕР±СЂР°С‚РЅРѕ.\n";
+	int kilometers; // СЂР°СЃС‚РѕСЏРЅРёРµ
+	cout << "Р Р°СЃС‚РѕСЏРЅРёРµ РґРѕ РґР°С‡Рё (РєРј.) "; cin >> kilometers;
+	double petrol_quantity; // СЂР°СЃС…РѕРґ
+	cout << "Р Р°СЃС…РѕРґ Р±РµРЅР·РёРЅР° (Р»РёС‚СЂРѕРІ РЅР° 100 РєРј. РїСЂРѕР±РµРіР°) "; cin >> petrol_quantity;
+	double gasoline_price; // С†РµРЅР° Р±РµРЅР·РёРЅР°
+	cout << "Р¦РµРЅР° Р»РёС‚СЂР° Р±РµРЅР·РёРЅР° (РіСЂРЅ.) "; cin >> gasoline_price;
 	double price = ((kilometers * petrol_quantity) / 100) * gasoline_price * 2;
-	cout << "Цена литра бензина на дачу и обратно обойдется в " << round(price) << " грн.";
+	cout << "Р¦РµРЅР° Р»РёС‚СЂР° Р±РµРЅР·РёРЅР° РЅР° РґР°С‡Сѓ Рё РѕР±СЂР°С‚РЅРѕ РѕР±РѕР№РґРµС‚СЃСЏ РІ " << round(price) << " РіСЂРЅ.";
 #endif
 }
