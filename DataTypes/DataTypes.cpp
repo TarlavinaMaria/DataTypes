@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -10,7 +10,7 @@ using std::endl;
 void main()
 {
 	setlocale(LC_ALL, "Rus");
-	cout << "Ïðèâåò DataTypes\n";
+	cout << "ÐŸÑ€Ð¸Ð²ÐµÑ‚ DataTypes\n";
 #if defined LOGICAL_TYPES
 	cout << true << endl;
 	cout << false << endl;
@@ -38,10 +38,10 @@ void main()
 #if defined COFFEE
 	double price_of_coffe;
 	int number_of_cups;
-	cout << "Ââåäèòå ñòîèìîñòü êîôå: "; cin >> price_of_coffe;
-	cout << "Ââåäèòå êîëè÷åñòâî ÷àøåê: "; cin >> number_of_cups;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ ÐºÐ¾Ñ„Ðµ: "; cin >> price_of_coffe;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‡Ð°ÑˆÐµÐº: "; cin >> number_of_cups;
 	double total_price = price_of_coffe * number_of_cups;
-	cout << "Îáùàÿ ñòîèìîñòü: " << total_price << endl;
+	cout << "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ: " << total_price << endl;
 #endif
 
 	int speed = 0;
